@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+ 
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:title="@string/pref_guess_range" >
+
+        <EditTextPreference
+                android:title="@string/pref_min_guess"
+                android:summary="@string/pref_min_guess_summary"
+                android:key="prefMinGuess"
+                android:inputType="number"/>
+        <EditTextPreference
+                android:title="@string/pref_max_guess"
+                android:summary="@string/pref_max_guess_summary"
+                android:key="prefMaxGuess"
+                android:inputType="number"/>
+    </PreferenceCategory>
+     
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:title="@string/pref_other_options" >
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefPlaySounds"
+            android:summary="@string/pref_play_sounds_summary"
+            android:title="@string/pref_play_sounds" >
+        </CheckBoxPreference>
+ 
+    </PreferenceCategory>
+ 
+</PreferenceScreen>
