@@ -1,0 +1,346 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.appsbylyon.tipcalculator.MainActivity$PlaceholderFragment" >
+    
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/dinner_image" />
+
+    <LinearLayout
+        android:id="@+id/sublayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tv_bill_prompt"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <EditText
+            android:id="@+id/billamount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/et_bill_hint"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+	
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sublayout1"
+        android:gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/tipPercentOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:onClick="tipOptionChange"
+            android:text="@string/rb_enter_tip_percent"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <RadioButton
+            android:id="@+id/tipAmountOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="tipOptionChange"
+            android:text="@string/rb_enter_tip_amount"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+    </RadioGroup>
+    
+    <LinearLayout
+        android:id="@+id/sublayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvTipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tv_tip_prompt_percent"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <EditText
+            android:id="@+id/tippercent"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/et_tip_hint"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/sublayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sublayout2"
+        android:layout_marginTop="10dp"
+	    android:layout_centerHorizontal="true">
+        
+	    <CheckBox
+	        android:id="@+id/splitCheckBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="splitCheckClick"
+	        android:paddingRight="15dp"
+	        android:text="@string/cb_split_label"
+	        android:textColor="@color/textColor"
+	        android:textSize="@dimen/textSize" />
+
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+		        
+	        android:orientation="horizontal" >
+	        
+		    <TextView
+		        android:id="@+id/splitTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/tv_split_label"
+		        android:gravity="right"
+		        android:textColor="@color/textColor"
+		        android:textSize="@dimen/textSize" />
+		    
+		    <EditText
+		        android:id="@+id/splitNum"
+		        android:layout_width="50dip"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:hint="@string/et_default_people"
+		        android:inputType="number"
+		        android:singleLine="true"
+		        android:text="@string/et_default_people"
+		        android:textColor="@color/textColor"
+		        android:textSize="@dimen/textSize" />
+
+	    </LinearLayout>
+	
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sublayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sublayout3"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/tv_tip_percent_label"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/tipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/tv_default_total"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+        
+        <TextView
+            android:id="@+id/billAmountStaticLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/tv_bill_amount_label"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/billAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/tv_default_total"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sublayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sublayout4"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tipAmountStaticLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/tv_tip_amount_label"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/tipAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/tv_default_total"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+        
+        <TextView
+            android:id="@+id/billTotalStaticLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/tv_bill_total_label"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/billTotalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/tv_default_total"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/sublayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sublayout5"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/numOfPeopleStaticLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/tv_split_label"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/numOfPeopleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/tv_default_total"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+        
+        <TextView
+            android:id="@+id/perPersonStaticLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/tv_per_person_label"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/perPersonLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/tv_default_total"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/sublayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+	    <Button
+	        android:id="@+id/clearButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="2dp"
+	        android:layout_weight="50"
+	        android:background="@drawable/buttonshape"
+	        android:onClick="clearAll"
+	        android:text="@string/btn_clear" />
+	
+	    <Button
+	        android:id="@+id/calculateButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="50"
+	        android:layout_marginLeft="2dp"
+	        android:background="@drawable/buttonshape"
+	        android:onClick="calculateBill"
+	        android:text="@string/btn_calculate" />
+
+	</LinearLayout>
+</RelativeLayout>

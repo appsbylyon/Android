@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Tip Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="tv_bill_prompt">Bill Amount: $</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="et_bill_hint">31.41</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="et_tip_hint">15</string>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="tv_tip_prompt_percent">Tip Percent: </string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="btn_calculate">Calculate</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="btn_clear">Clear</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="tv_tip_total_label">Total Tip: </string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="tv_bill_total_label">Bill Total: </string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="tv_default_total">$$</string>
+    <color android:layout_height="wrap_content" android:id="@+id/color1" android:layout_width="wrap_content" name="textColor">#ffffff</color>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="rb_enter_tip_percent">Enter Tip Percent</string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="rb_enter_tip_amount">Enter Tip Amount</string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="tv_tip_prompt_amount">Tip Amount: $</string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="cb_split_label">Split Bill</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="tv_split_label">People: </string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="tv_per_person_label">Per Person: </string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="tv_bill_amount_label">Bill Amount: </string>
+<string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="tv_tip_amount_label">Tip Amount: </string>
+<string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="tv_tip_percent_label">Tip Percent: </string>
+<string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="et_default_people">2</string>
+<color android:layout_width="wrap_content" android:id="@+id/color1" android:layout_height="wrap_content" name="compound_button_border_color">#ffffff</color>
+    
+</resources>
