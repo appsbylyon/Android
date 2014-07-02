@@ -1,0 +1,21 @@
+How does Alvis Work?
+
+Legitimate scientific research has shown that people have the ability to affect the outcome of random number generators.  Alvis gets his answers based of this assumption.
+
+After a question is asked Alvis flips a coin (generates a random number, either 0 or 1) 5 million times.  That why it takes a few moments for Alvis to respond after a question is asked.  Once the 'coin tosses' are complete Alvis analyses the results to see if any statistical anomalies have occurred.
+
+Alvis is looking at two different aspects of the results.  The ratio of heads to tails and number of streaks of each.  For 5 million flips the average maximum streak will be 21 times in a row.  If heads or tails occurs more than this that is a statistical anomaly.  The average difference between heads and tails occurring over 5 million flips is about 1780, so if the difference is more than this that is a statistical anomaly.  Alvis takes both of these things into account when deciding what the answer is.  If the results do not indicate anything unusual then Alvis will respond with "I just don't know".  With Alvis the possible answers are the following:
+
+Definitely Not
+Highly Unlikely
+Probably Not
+Small Chance of No
+I just don't know
+Small Chance of Yes
+Probably Yes
+Highly Likely
+Definitely Yes
+
+The results are centred around "I just don't know" and the results will be most commonly around those.  Answers of "Definitely Not" and "Definitely Yes" are very uncommon and will not appear very often.
+
+So the assumption is that the user them self is affecting the results and Alvis does his best to figure out what it means when the results are not what they should be.  

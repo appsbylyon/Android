@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_dialog_fragment"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_back9"
+    android:layout_gravity="center" android:orientation="vertical"  >
+	
+    <com.appsbylyon.askalvis.custom.ScrollViewCustom
+        android:id="@+id/help_dialog_scroll"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp">
+
+	    <TextView
+	        android:id="@+id/help_dialog_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Agreement Text Will Go Here"
+	        android:textColor="@color/help_dialog_text_color"
+	        android:textSize="@dimen/help_dialog_text_size" />
+    
+    </com.appsbylyon.askalvis.custom.ScrollViewCustom>
+
+		<TextView
+		    android:id="@+id/show_more_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/help_dialog_scroll"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="5dp"
+		    android:text="Scroll Down For More"
+		    android:textColor="@color/help_dialog_text_color"
+		    android:textColorHint="@color/help_dialog_text_color"
+		    android:textSize="@dimen/help_dialog_show_more_textsize" />
+		
+	    <Button
+	        android:id="@+id/help_dialog_ok_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/show_more_text"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/button_dark"
+	        android:text="@string/help_dialog_ok" />
+   
+</RelativeLayout>

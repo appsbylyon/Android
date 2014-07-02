@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_fragment"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_back9"
+    android:layout_gravity="center" android:orientation="vertical"  >
+	
+    <CheckBox
+        android:id="@+id/play_sounds_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_play_sounds"
+        android:textColor="@color/help_dialog_text_color"
+        android:textSize="@dimen/help_dialog_text_size" />
+		
+	    <Button
+	        android:id="@+id/settings_dialog_ok_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/play_sounds_check"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/button_dark"
+	        android:text="@string/settings_done" />
+   
+</RelativeLayout>

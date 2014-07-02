@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Ask Alvis</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="user_agreement_title">User Agreement</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="button_user_agreement_accept">Accept</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="button_user_agreement_decline">Decline</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="user_declined_toast">Sorry, you can\'t use Ask Alvis without accepting the terms.</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="pref_has_user_agreed">user_agreed</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="user_agreed_toast">Thank You! Enjoy Ask Alivs</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="pref_prefs_initialized">prefsIntitialized</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="pref_play_sounds">playSounds</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="title_tap_lamp">Rub Lamp To Wake Alvis Up</string>
+    <dimen android:layout_height="wrap_content" android:id="@+id/dimen1" android:layout_width="wrap_content" name="header_text_size">22dp</dimen>
+    <color android:id="@+id/color1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="title_font_color">#000000</color>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="title_tap_alvis">Tap Alvis To Ask A Question</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="title_speak_question">Speak Your Question To Alvis</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="alvis_speak_question">Speak Your Question</string>
+    <color android:layout_width="wrap_content" android:id="@+id/color1" android:layout_height="wrap_content" name="bubble_text_color">#ffffff</color>
+    <dimen android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dimen1" name="bubble_text_size">18dp</dimen>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="title_shake_for_answer">Shake Alvis To Get Your Answer</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="answer_definite_no">Definitely Not</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="answer_high_no">Highly Unlikely</string>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="answer_medium_no">Probably Not</string>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="answer_light_no">Small chance of No</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="answer_neutral">I just don\'t know</string>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="answer_light_yes">Small chance of Yes</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="answer_medium_yes">Probably Yes</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="answer_high_yes">Highly LikeLy</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="answer_definite_yes">Definitely Yes</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="alvis_thinking">PLEASE WAIT</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="action_about">About</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="action_help">Help</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="app_title_about">Ask Alvis - About</string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="app_title_help">Ask Alvis - Help</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="help_title">Ask Alvis Help and Info</string>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="help_who_is_alvis">Who is Alvis</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="help_how_it_works">How Does Alvis Work</string>
+    <color android:layout_height="wrap_content" android:id="@+id/color1" android:layout_width="wrap_content" name="help_screen_background">#000000</color>
+    <color android:id="@+id/color1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="help_screen_font_color">#FFFFFF</color>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="help_dialog_ok">OK</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="help_dialog_choice">help_choice</string>
+    <color android:layout_width="wrap_content" android:id="@+id/color1" android:layout_height="wrap_content" name="help_dialog_text_color">#FFFFFF</color>
+    <dimen android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dimen1" name="help_dialog_show_more_textsize">16dp</dimen>
+    <dimen android:layout_width="wrap_content" android:id="@+id/dimen1" android:layout_height="wrap_content" name="help_dialog_text_size">20dp</dimen>
+    <string android:id="@+id/string1" android:layout_height="wrap_content" android:layout_width="wrap_content" name="settings_play_sounds">Play Sounds</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="settings_done">Done</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="alvis_bad_question">Please ask a Yes or No question</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="alvis_unknown_question">I didn\'t understand your question</string>
+    <string android:layout_width="wrap_content" android:id="@+id/string1" android:layout_height="wrap_content" name="header_speak">Speak Your Question To Alvis</string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="help_how_to_use">How To Use Alvis</string>
+
+</resources>

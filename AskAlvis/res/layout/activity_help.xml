@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/help_screen_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/help_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/help_screen_font_color" />
+
+    <Button
+        android:id="@+id/help_who_is_alvis_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons_light"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/help_who_is_alvis"
+        android:textColor="@color/help_screen_font_color" />
+
+    <Button
+        android:id="@+id/help_how_it_works_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons_light"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/help_how_it_works"
+        android:textColor="@color/help_screen_font_color" />
+    
+    <Button
+        android:id="@+id/help_how_to_use_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons_light"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/help_how_to_use"
+        android:textColor="@color/help_screen_font_color" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+How To Use Alvis
+
+*WAKING ALVIS UP*
+When the app is started Alvis will be sleeping in his lamp.  You must rub the lamp 3 times in order to wake him up.
+
+*ASKING QUESTIONS*
+After Alvis has been woken up you need to tap him to let him know you are ready to ask a question.  If sounds are enabled you will hear Alvis prompt you to "Speak Your Question".  After he is done speaking a dialog will appear when Alvis is ready to listen to your question.  Speak your question slowly and clearly.  Alvis will only respond to questions that can be answered with "Yes" or "No".  Your question must start with words like the following:
+will
+can
+do
+is
+am
+are
+If your questions start with other words Alvis will remind you to ask a yes or no question.  If you say something that is not a question Alvis will simply tell you that he did not understand your question.  Once your question has been asked Alvis will tell you to "Please Wait" while he thinks about what the answer is.  Once he has given you a response he will need to be tapped again in order to ask another question.
+
+Alvis is simple to interact with and can be a lot of fun if used properly.  Enjoy!
